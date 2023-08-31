@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  background-image: url('dark_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.location {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature {
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffaa50;
+  margin-right: 20px;
+}
+
+.conditions {
+  font-size: 24px;
+  color: #555;
+}
+
