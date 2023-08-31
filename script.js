@@ -1,7 +1,7 @@
-const locations = ['New York, NY', 'New York, NY''];
+const locations = ['New York, NY', 'New York, NY'];
 const temperatures = ['75°F', '68°F'];
 const conditions = ['Sunny', 'Clear Skies'];
-const backgrounds = ['dark_background.jpg', 'light_background.jpg''];
+const backgrounds = ['dark_background.jpg', 'light_background.jpg'];
 
 let currentIndex = 0;
 
