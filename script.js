@@ -1,29 +1,30 @@
-const locations = ['New York, NY', 'New York, NY'];
-const temperatures = ['75°F', '68°F'];
-const conditions = ['Sunny', 'Clear Skies'];
-const backgrounds = ['dark_background.jpg', 'light_background.jpg'];
+const locations = ['Tokyo', 'Tokyo'];
+const temperatures = ['15°C', '13°C'];
+const times = ['3:04PM', '10:31PM'];
+const dates = ['September 3rd, 2023', 'September 3rd, 2023'];
 
 let currentIndex = 0;
 
-const weatherContainer = document.querySelector('.weather-container');
-const locationElement = document.querySelector('.location');
-const temperatureElement = document.querySelector('.temperature');
-const conditionsElement = document.querySelector('.conditions');
+const locationElement = document.getElementById('location');
+const temperatureElement = document.getElementById('temperature');
+const timeElement = document.getElementById('time');
+const dateElement = document.getElementById('date');
+const bodyElement = document.body;
 
-weatherContainer.addEventListener('click', () => {
-  console.log("click event triggered");
+function updateWeatherInfo(index) {
+  locationElement.textContent = locations[index];
+  temperatureElement.textContent = temperatures[index];
+  timeElement.textContent = times[index];
+  dateElement.textContent = dates[index];
+
+  // Update background image based on the current slide
+  bodyElement.className = `slide${index + 1}`;
+}
+
+updateWeatherInfo(currentIndex);
+
+document.body.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % locations.length;
-
-  locationElement.textContent = locations[currentIndex];
-  temperatureElement.textContent = temperatures[currentIndex];
-  conditionsElement.textContent = conditions[currentIndex];
-
-  document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+  updateWeatherInfo(currentIndex);
 });
-
-// Initial setup
-locationElement.textContent = locations[currentIndex];
-temperatureElement.textContent = temperatures[currentIndex];
-conditionsElement.textContent = conditions[currentIndex];
-document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
 
