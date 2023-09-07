@@ -7,6 +7,7 @@ body {
 }
 
 .weather-container {
+  font-size: 122px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,7 @@ body {
 }
 
 .weather-details {
+  font-size: 12.5px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,23 +42,6 @@ body {
   font-size: 18px;
 }
 
-/* Ellipse with "Edit" styles */
-.edit-ellipse {
-  width: 100px; /* Adjust the width of the ellipse */
-  height: 50px; /* Adjust the height of the ellipse */
-  background-color: #007bff; /* Blue color for the ellipse */
-  color: #fff; /* Text color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%; /* Make it an ellipse */
-  margin: 20px auto; /* Center the ellipse horizontally and add spacing */
-  font-weight: bold;
-  font-size: 18px; /* Adjust the font size */
-  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
-}
-
-
 /* Background images based on the slide */
 .slide1 {
   background-image: url('dark_background.jpg');
@@ -68,3 +53,25 @@ body {
   background-color: #f3f3f3; /* Fallback color */
 }
 
+/* CSS for centered images */
+.side-by-side-images {
+  text-align: center; /* Center the inline elements (images) within this div */
+}
+
+.side-by-side-images img {
+  display: inline-block; /* Make the images inline */
+  margin: 0 10px; /* Add spacing between the images if needed */
+}
+
+/* CSS for centered Image 5 */
+.centered-image {
+  display: block; /* Change to block-level element */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 20px; /* Add vertical spacing if needed */
+}
+
+.centered-image-2 {                                                                
+display: block; /* Change to block-level element */  
+margin: 0 auto; /* Center horizontally */  
+margin-top: 40px; /* Add vertical spacing if needed */ 
+} 
